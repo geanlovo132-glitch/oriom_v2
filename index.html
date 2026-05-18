@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gean AP – ORIOM & Livros</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:
+    linear-gradient(rgba(0,0,20,0.92), rgba(0,0,30,0.95)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070');
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+}
+
+/* CABEÇALHO */
+
+header{
+    background:rgba(0,0,30,0.85);
+    padding:30px;
+    text-align:center;
+    border-bottom:1px solid #00aaff;
+    box-shadow:0 0 20px #00aaff55;
+}
+
+header h1{
+    margin:0;
+    font-size:48px;
+    color:#ffffff;
+}
+
+header p{
+    color:#00aaff;
+    font-size:20px;
+}
+
+/* MENU */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:20px;
+    background:#061427;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00aaff;
+    text-shadow:0 0 10px #00aaff;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:40px;
+}
+
+h2{
+    color:#00bfff;
+    font-size:36px;
+}
+
+/* CARDS */
+
+.card{
+    background:rgba(5,15,35,0.88);
+    border:1px solid #00aaff44;
+    border-radius:20px;
+    padding:30px;
+    margin-top:20px;
+    box-shadow:
+    0 0 15px rgba(0,170,255,0.2);
+}
+
+/* CAPAS */
+
+.pdf-img{
+    width:220px;
+    border-radius:15px;
+    transition:0.4s;
+    margin:20px;
+    box-shadow:0 0 15px rgba(0,170,255,0.25);
+}
+
+.pdf-img:hover{
+    transform:
+    scale(1.05)
+    translateY(-8px);
+
+    box-shadow:
+    0 0 30px #00aaff,
+    0 0 60px #0077ff55;
+}
+
+/* BANNER */
+
+.banner{
+    width:100%;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 0 30px #00aaff55;
+}
+
+/* CONTATO */
+
+.contact{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/* RODAPÉ */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+    border-top:1px solid #00aaff33;
+    margin-top:50px;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Gean AP</h1>
+  <p>ORIOM & MAIS</p>
+</header>
+<nav>
+  <a href="#oriom">ORIOM</a>
+  <a href="#livros">Livros</a>
+  <a href="#artigos">Artigos</a>
+  <a href="#contato">Contato</a>
+</nav>
+<section id="oriom">
+  <h2>ORIOM Desktop V2 – Sistema Laboratorial Inteligente</h2>
+  <img src="Banner_oriom.png" class="Banner ORIOM" style="width:100%; max-height:400px; object-fit:cover; border-radius:10px;">
+  <div class="card">
+    <p>O ORIOM Desktop V2 é um sistema de automação e análise laboratorial que facilita:</p>
+    <ul>
+      <li>Cadastro e controle de ensaios laboratoriais</li>
+      <li>Gráficos de resultados e relatórios automáticos</li>
+      <li>Controle estatístico de qualidade</li>
+      <li>Integração futura com Inteligência Artificial</li>
+    </ul>
+  </div>
+</section>
+<section id="livros">
+  <h2>Livros e Narrativas</h2>
+  <div class="card">
+    <a href="Amante_do_Amanha.pdf" target="_blank">
+      <img src="Amante_do_Amanha.png" alt="Amante do Amanha" class="pdf-img">
+    </a>
+
+    <a href="O_terapeuta_das_almas.pdf" target="_blank">
+      <img src="O_Terapeuta_das_Almas.png" alt="O Terapeuta das Almas" class="pdf-img">
+    </a>
+  </div>
+</section>
+
+<section id="artigos">
+  <h2>Artigos e Ensaios</h2>
+  <div class="card">
+    <a href="A_guerra_da_criacao.pdf" target="_blank">
+      <img src="A_Guerra_da_Criacao.png" alt="A Guerra da Criação" class="pdf-img">
+    </a>
+
+    <a href="A_Historia_do_Atomo.pdf" target="_blank">
+      <img src="A_historia_do_atomo.png" alt="A História do Átomo" class="pdf-img">
+    </a>
+
+    <a href="Senhor_meu_Deus.pdf" target="_blank">
+      <img src="Senhor_meu_Deus.png" alt="Oração Senhor Meu Deus" class="pdf-img">
+    </a>
+  </div>
+</section>
+<section id="contato">
+  <h2>Fale comigo</h2>
+  <div class="card">
+    <ul>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/gean-ap" target="_blank">linkedin.com/in/gean-ap</a></li>
+      <li>Freelancer.com: <a href="https://www.freelancer.com/u/geanap" target="_blank">Perfil Freelancer</a></li>
+      <li>E-mail: gean-lovo@outlook.com</li>
+      <li>WhatsApp: (xx) xxxx-xxxx</li>
+    </ul>
+  </div>
+</section>
+<footer>
+  <p>© 2026 Gean AP – Ciência, Criatividade e Inovação</p>
+</footer>
+</body>
+</html>
